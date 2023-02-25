@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjy44xcxlqgpr"]
+
+[ext_resource type="Script" path="res://Main.gd" id="1_wfpmu"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wfpmu")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -238.0
+offset_top = -85.5
+offset_right = 238.0
+offset_bottom = 85.5
+
+[node name="SignInBtn" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Sign in"
+
+[node name="SignOutBtn" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Sign Out"
+
+[node name="ErrorDialog" type="AcceptDialog" parent="."]
+unique_name_in_owner = true
+
+[connection signal="pressed" from="HBoxContainer/SignInBtn" to="." method="_on_SignInBtn_pressed"]
+[connection signal="pressed" from="HBoxContainer/SignOutBtn" to="." method="_on_SignOutBtn_pressed"]

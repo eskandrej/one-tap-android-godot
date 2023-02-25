@@ -1,0 +1,9 @@
+[config]
+
+name="one-tap-android-godot"
+binary_type="local"
+binary="one-tap-android-godot.aar"
+
+[dependencies]
+
+remote=["com.google.android.gms:play-services-auth:20.4.1"]

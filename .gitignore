@@ -1,0 +1,15 @@
+*.iml
+.gradle
+.import
+.idea/
+.godot
+local.properties
+.DS_Store
+build/
+/captures
+.externalNativeBuild
+.cxx
+Demo/android
+local.properties
+godot-lib.release.aar
+one-tap-android-godot.aar
