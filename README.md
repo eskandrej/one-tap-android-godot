@@ -2,6 +2,8 @@
 
 Android plugin for Godot that uses One Tap API for login.
 
+![anim](https://user-images.githubusercontent.com/122531384/221402464-915101ef-5edd-4f86-985c-0f028fc3b573.gif)
+
 # Compile Plugin
 
 1. Download AAR library for Android [https://godotengine.org/download](https://godotengine.org/download)
